@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -5,19 +6,22 @@ int paint(char letter, int colum, int row)
 {
 	
 
-	while (i = 0, i <= row, i++) 
+	for (int i = 0; i < row; i++) 
 	{
-		while (t = 0, t <= colum, t++) 
+		for (int t = 0; t < colum; t++) 
 		{
 			cout << letter;
 		}
+		cout << endl;
 	}
+	return 0;
 }
 
 
 int main()
 {
-	char letter1, int colum1, int row1;
+	char letter1;
+	int colum1, row1;
 
 	cout << "Enter symbol: ";
 	cin >> letter1;
