@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+double min(double one, double two)
+{
+	return one < two ? one : two;
+}
+
+
+int main()
+{
+	double one, two;
+
+	cout << "Enter first number: ";
+	cin >> one;
+	cout << "Enter second number: ";
+	cin >> two;
+
+	while (cin.good())
+	{
+		cout << "The smallest number is: " << min(one, two)<<endl << endl;
+		cout << "Enter next first number: ";
+		cin >> one;
+		cout << "Enter next second number: ";
+		cin >> two;
+	}
+
+}
