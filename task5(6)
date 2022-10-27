@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+double larger(double a, double b, double c)
+{
+double max = a;
+
+if (b > max) max = b;
+if (c > max) max = c;
+
+return max;
+}
+
+double lowest(double a, double b, double c)
+{
+double min = a;
+
+if (b < min) min = b;
+if (c < min) min = c;
+
+return min;
+}
+
+double medium(double a, double b, double c)
+{
+
+double med = a;
+
+if (a < larger(a, b, c) && a > lowest(a, b, c)) med = a;
+if (b < larger(a, b, c) && b > lowest(a, b, c)) med = b;
+if (c < larger(a, b, c) && c > lowest(a, b, c)) med = c;
+
+return med;
+}
+
+
+int main(){
+double one, two, three;
+cout << "Enter 3 numbers: " << endl;
+cin >> one >> two >> three;
+cout << "Largest: " << larger(one, two, three) << " Mid: " << medium(one, two, three) << " Lowest: " << lowest(one, two, three);
+}
