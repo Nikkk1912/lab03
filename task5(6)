@@ -38,5 +38,5 @@ int main(){
 double one, two, three;
 cout << "Enter 3 numbers: " << endl;
 cin >> one >> two >> three;
-cout << "Largest: " << larger(one, two, three) << " Mid: " << medium(one, two, three) << " Lowest: " << lowest(one, two, three);
-}
+cout <<"Lowest: " << lowest(one, two, three)<< " Mid: " << medium(one, two, three) << " Largest: " << larger(one, two, three);
+}  
