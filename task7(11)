@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+void Fibonacci(int t) {
+    int n1 = 0, n2 = 1, nextnumber = 0;
+
+
+    for (int i = 1; i <= t; ++i) {
+        if(i == 1) {
+            cout << n1 <<endl;
+            continue;
+        }
+        if(i == 2) {
+            cout << n2 <<endl;
+            continue;
+        }
+        if(i > 2){
+        nextnumber = n1 + n2;
+        n1 = n2;
+        n2 = nextnumber;
+        
+        cout << nextnumber <<endl;
+        }
+    }
+};
+
+int main() {
+int num;
+
+    cout << "Enter amount of needed number: ";
+    cin >> num;
+
+    cout << "Fibonacci Series: " << endl;
+    Fibonacci(num);
+}
