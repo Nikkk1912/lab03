@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, t, last;
+    char word;
+
+    cout << "Enter your word: ";
+    cin >> word;
+
+
+
+        if (tolower(word) >= 'a' && tolower(word) <= 'z') {
+
+        cout << word << "  " << (int) tolower(word) - 96 << endl;
+        }
+
+        else cout << word << "  " << "-1" << endl;
+        
+}
